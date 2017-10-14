@@ -2,32 +2,86 @@
 
 @import url(https://reset5.googlecode.com/hg/reset.min.css);
 @import url(https://fonts.googleapis.com/css?family=Nixie+One|Open+Sans:700italic,400,700|Open+Sans+Condensed:300,300italic,700|Slabo+13px);
-* {
-    box-sizing: border-box;
-	}
-body {
-  margin: 0;
-  background-color: dodgerblue;
-}
+@font-header : 'Nixie One', serif;
+@font-body : 'Open Sans Condensed', sans-serif;
+
+@white: #fff;
+@pink: #ff6e6f;
+@gray-dark: #343434;
+@gray-med: #666;
+@gray-light: #eee;
+
+header,
+nav,
+footer,
+div { width: 100%; }
+
 .header {
-   background-color: dodgerblue;
-   padding: 20px;
-   text-align: center;
-   text-transform: uppercase;
- }
-.topnav {
-    overflow: hidden;
-    background-color: #333;
+  padding: 20px 0;
+  background: @white;
+  font: normal 2em/normal @font-header;
+  color: @pink;
+  text-align: center;
 }
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
+
+nav {
+  margin: 0;
+  padding: 0;
+  background: @pink;
+  overflow: hidden;
+  
+  ul {
+    list-style: none;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    overflow: hidden;
+    
+    li {
+      display: inline-block;
+      margin: 0 -4px;
+      padding: 5px 0;
+
+      a {
+        padding: 5px 20px;
+        font: normal 1em/normal @font-body;
+        color: @white;
+        text-decoration: none;
+        text-transform: uppercase;
+        
+        &:hover,
+        &.active {
+          background: @gray-dark;
+        }
+      }
+    }
+  }
 }
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
- }
+
+section {
+  padding: 20px;
+  height: 500px;
+  font: normal 2em/normal @font-body;
+  
+  &#section1,
+  &#section3 {
+    background: @gray-dark;
+    color: @gray-light;
+  }
+
+  &#section2,
+  &#section4{
+    background: @gray-med;
+    color: @gray-light;
+  }
+}
+
+h1 {
+  font-size: 2em;
+}
+
+footer {
+  padding: 20px;
+  background: @pink;
+  font: normal 1em @font-body;
+  color: @white;
+  text-align: center;
+}
