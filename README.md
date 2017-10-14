@@ -1,4 +1,4 @@
-# Social AR
+# SocialAR
 ## Inspiration
 
 ## What it does
@@ -11,4 +11,4 @@
 
 ## What we learned
 
-## What's next for Social AR
+## What's next for SocialAR
