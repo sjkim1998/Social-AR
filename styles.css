@@ -19,16 +19,16 @@ div { width: 100%;}
 
 header {
   padding: 20px 0;
-  background: @white;
+  background: #fff;
   font: normal 2em/normal @font-header;
-  color: @pink;
+  color: #ff6e6f;
   text-align: center;
 }
 
 nav {
   margin: 0;
   padding: 0;
-  background: @pink;
+  background: #ff6e6f;
   overflow: hidden;
   
   ul {
@@ -81,7 +81,7 @@ h1 {
 
 footer {
   padding: 20px;
-  background: @pink;
+  background: #ff6e6f;
   font: normal 1em @font-body;
   color: @white;
   text-align: center;
