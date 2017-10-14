@@ -15,7 +15,7 @@
 header,
 nav,
 footer,
-div { width: 100% };
+div { width: 100% ;}
 
 .header {
   padding: 20px 0;
