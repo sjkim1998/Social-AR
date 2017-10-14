@@ -25,7 +25,7 @@ div { width: 100%;}
   text-align: center;
 }
 
-nav {
+.nav {
   margin: 0;
   padding: 0;
   background: @pink;
@@ -57,7 +57,7 @@ nav {
   }
 }
 
-section {
+.section {
   padding: 20px;
   height: 500px;
   font: normal 2em/normal @font-body;
@@ -79,7 +79,7 @@ h1 {
   font-size: 2em;
 }
 
-footer {
+.footer {
   padding: 20px;
   background: @pink;
   font: normal 1em @font-body;
